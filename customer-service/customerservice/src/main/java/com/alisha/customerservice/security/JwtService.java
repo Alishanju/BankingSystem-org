@@ -2,6 +2,8 @@ package com.alisha.customerservice.security;
 
 import io.jsonwebtoken.Jwts;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -9,6 +11,7 @@ import java.util.Date;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class JwtService {
 
     private final KeyLoader keyLoader;
@@ -67,7 +70,12 @@ public class JwtService {
 
             return true;
 
-        } catch (Exception e) {
+        } catch (Exception ex) {
+
+            log.error(
+                    "JWT validation failed: {}",
+                    ex.getMessage());
+
             return false;
         }
     }

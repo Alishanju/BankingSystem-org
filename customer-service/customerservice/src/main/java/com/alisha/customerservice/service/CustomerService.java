@@ -6,12 +6,15 @@ import com.alisha.customerservice.entity.Customer;
 import com.alisha.customerservice.exception.CustomerNotFoundException;
 import com.alisha.customerservice.repository.CustomerRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class CustomerService {
 
     private final CustomerRepository repository;
@@ -29,7 +32,7 @@ public class CustomerService {
     }
 
     public List<CustomerResponse> getAllCustomers() {
-
+        log.info("Fetching all customers");
         return repository.findAll()
                 .stream()
                 .map(this::map)
@@ -37,7 +40,7 @@ public class CustomerService {
     }
 
     public CustomerResponse getCustomerById(Long id) {
-
+        log.info("Fetching customer with id {}", id);
         Customer customer = repository.findById(id)
                 .orElseThrow(() -> new CustomerNotFoundException(
                         "Customer not found"));
@@ -48,7 +51,7 @@ public class CustomerService {
     public CustomerResponse updateCustomer(
             Long id,
             CustomerRequest request) {
-
+        log.info("Updating customer with id {}", id);
         Customer customer = repository.findById(id)
                 .orElseThrow(() -> new CustomerNotFoundException(
                         "Customer not found"));
@@ -58,16 +61,19 @@ public class CustomerService {
         customer.setPhone(request.getPhone());
 
         Customer savedCustomer = repository.save(customer);
+        log.info("Customer updated successfully with id {}", id);
 
         return map(savedCustomer);
     }
 
     public void deleteCustomer(Long id) {
+        log.info("Deleting customer with id {}", id);
 
         Customer customer = repository.findById(id)
                 .orElseThrow(() -> new CustomerNotFoundException(
                         "Customer not found"));
 
         repository.delete(customer);
+        log.info("Customer deleted successfully with id {}", id);
     }
 }
