@@ -23,9 +23,8 @@ public class KeyLoader {
 
         public PrivateKey getPrivateKey() throws Exception {
 
-                String key = new String(
-                                privateKeyResource.getInputStream()
-                                                .readAllBytes());
+                String key = Files.readString(
+                                privateKeyResource.getFile().toPath());
 
                 key = key
                                 .replace("-----BEGIN PRIVATE KEY-----", "")
@@ -43,10 +42,8 @@ public class KeyLoader {
 
         public PublicKey getPublicKey() throws Exception {
 
-                String key = new String(
-                                publicKeyResource
-                                                .getInputStream()
-                                                .readAllBytes());
+                String key = Files.readString(
+                                publicKeyResource.getFile().toPath());
 
                 key = key
                                 .replace("-----BEGIN PUBLIC KEY-----", "")

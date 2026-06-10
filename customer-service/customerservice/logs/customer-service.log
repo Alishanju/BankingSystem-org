@@ -1,0 +1,484 @@
+2026-06-08 17:53:22 INFO  [customer-service,,] c.a.c.CustomerserviceApplicationTests - Starting CustomerserviceApplicationTests using Java 21.0.7 with PID 18132 (started by aasif in D:\AlishaLearning\BankingSystem\customer-service\customerservice)
+2026-06-08 17:53:22 DEBUG [customer-service,,] c.a.c.CustomerserviceApplicationTests - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-06-08 17:53:22 INFO  [customer-service,,] c.a.c.CustomerserviceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-06-08 17:53:24 INFO  [customer-service,,] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-08 17:53:24 INFO  [customer-service,,] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 94 ms. Found 1 JPA repository interface.
+2026-06-08 17:53:25 INFO  [customer-service,,] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-08 17:53:26 INFO  [customer-service,,] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-06-08 17:53:26 INFO  [customer-service,,] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-06-08 17:53:26 INFO  [customer-service,,] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-08 17:53:26 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-08 17:53:27 INFO  [customer-service,,] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3def5336
+2026-06-08 17:53:27 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-08 17:53:27 WARN  [customer-service,,] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-08 17:53:27 INFO  [customer-service,,] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-08 17:53:29 INFO  [customer-service,,] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-08 17:53:30 INFO  [customer-service,,] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08 17:53:30 INFO  [customer-service,,] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customerUserDetailsService
+2026-06-08 17:53:30 WARN  [customer-service,,] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-08 17:53:31 INFO  [customer-service,,] o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-06-08 17:53:32 INFO  [customer-service,,] c.a.c.CustomerserviceApplicationTests - Started CustomerserviceApplicationTests in 10.958 seconds (process running for 13.9)
+2026-06-08 17:53:34 INFO  [customer-service,,] c.a.c.service.AuthService - Login request received for aasif
+2026-06-08 17:53:34 INFO  [customer-service,,] c.a.c.service.AuthService - Login successful for aasif
+2026-06-08 17:53:34 INFO  [customer-service,,] c.a.c.service.CustomerService - Fetching customer with id 1
+2026-06-08 17:53:34 INFO  [customer-service,,] c.a.c.service.CustomerService - Fetching customer with id 1
+2026-06-08 17:53:34 INFO  [customer-service,,] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08 17:53:34 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-08 17:53:34 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-08 17:59:42 INFO  [customer-service,,] c.a.c.CustomerserviceApplicationTests - Starting CustomerserviceApplicationTests using Java 21.0.7 with PID 5616 (started by aasif in D:\AlishaLearning\BankingSystem\customer-service\customerservice)
+2026-06-08 17:59:42 DEBUG [customer-service,,] c.a.c.CustomerserviceApplicationTests - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-06-08 17:59:42 INFO  [customer-service,,] c.a.c.CustomerserviceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-06-08 17:59:44 INFO  [customer-service,,] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-08 17:59:44 INFO  [customer-service,,] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 138 ms. Found 1 JPA repository interface.
+2026-06-08 17:59:45 INFO  [customer-service,,] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-08 17:59:45 INFO  [customer-service,,] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-06-08 17:59:45 INFO  [customer-service,,] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-06-08 17:59:46 INFO  [customer-service,,] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-08 17:59:46 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-08 17:59:47 INFO  [customer-service,,] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@245c8ea5
+2026-06-08 17:59:47 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-08 17:59:47 WARN  [customer-service,,] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-08 17:59:47 INFO  [customer-service,,] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-08 17:59:50 INFO  [customer-service,,] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-08 17:59:50 INFO  [customer-service,,] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08 17:59:51 INFO  [customer-service,,] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customerUserDetailsService
+2026-06-08 17:59:51 WARN  [customer-service,,] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-08 17:59:52 INFO  [customer-service,,] o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-06-08 17:59:52 INFO  [customer-service,,] c.a.c.CustomerserviceApplicationTests - Started CustomerserviceApplicationTests in 11.717 seconds (process running for 14.377)
+2026-06-08 17:59:54 INFO  [customer-service,,] c.a.c.service.AuthService - Login request received for aasif
+2026-06-08 17:59:54 INFO  [customer-service,,] c.a.c.service.AuthService - Login successful for aasif
+2026-06-08 17:59:54 INFO  [customer-service,,] c.a.c.service.CustomerService - Fetching customer with id 1
+2026-06-08 17:59:54 INFO  [customer-service,,] c.a.c.service.CustomerService - Fetching customer with id 1
+2026-06-08 17:59:54 INFO  [customer-service,,] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08 17:59:55 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-08 17:59:55 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-08 18:24:49 INFO  [customer-service,,] c.a.c.CustomerserviceApplication - Starting CustomerserviceApplication using Java 21.0.7 with PID 16224 (D:\AlishaLearning\BankingSystem\customer-service\customerservice\target\classes started by aasif in D:\AlishaLearning\BankingSystem\customer-service\customerservice)
+2026-06-08 18:24:49 DEBUG [customer-service,,] c.a.c.CustomerserviceApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-06-08 18:24:49 INFO  [customer-service,,] c.a.c.CustomerserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-08 18:24:49 INFO  [customer-service,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-08 18:24:49 INFO  [customer-service,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-08 18:24:51 INFO  [customer-service,,] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-08 18:24:51 INFO  [customer-service,,] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface.
+2026-06-08 18:24:51 INFO  [customer-service,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-06-08 18:24:52 INFO  [customer-service,,] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-08 18:24:52 INFO  [customer-service,,] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-06-08 18:24:52 INFO  [customer-service,,] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-08 18:24:52 INFO  [customer-service,,] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2217 ms
+2026-06-08 18:24:52 INFO  [customer-service,,] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-08 18:24:52 INFO  [customer-service,,] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-06-08 18:24:52 INFO  [customer-service,,] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-06-08 18:24:52 INFO  [customer-service,,] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-08 18:24:52 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-08 18:24:53 INFO  [customer-service,,] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@54c064f9
+2026-06-08 18:24:53 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-08 18:24:53 WARN  [customer-service,,] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-08 18:24:53 INFO  [customer-service,,] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-08 18:24:54 INFO  [customer-service,,] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-08 18:24:54 INFO  [customer-service,,] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08 18:24:54 DEBUG [customer-service,,] c.a.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-06-08 18:24:55 INFO  [customer-service,,] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customerUserDetailsService
+2026-06-08 18:24:55 WARN  [customer-service,,] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-08 18:24:55 INFO  [customer-service,,] o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-06-08 18:24:55 INFO  [customer-service,,] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-08 18:24:55 INFO  [customer-service,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-06-08 18:24:55 INFO  [customer-service,,] c.a.c.CustomerserviceApplication - Started CustomerserviceApplication in 6.94 seconds (process running for 7.821)
+2026-06-08 18:25:38 INFO  [customer-service,,] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-08 18:25:38 INFO  [customer-service,,] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-08 18:25:38 INFO  [customer-service,,] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-06-08 18:25:38 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - Missing Authorization header for URI=/auth/login
+2026-06-08 18:25:39 INFO  [customer-service,,] c.a.c.service.AuthService - Login request received for aasif
+2026-06-08 18:25:39 ERROR [customer-service,,] c.a.c.service.AuthService - Invalid credentials for aasif
+2026-06-08 18:25:39 WARN  [customer-service,,] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.RuntimeException: Invalid credentials]
+2026-06-08 18:25:41 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - Missing Authorization header for URI=/auth/login
+2026-06-08 18:25:41 INFO  [customer-service,,] c.a.c.service.AuthService - Login request received for aasif
+2026-06-08 18:25:41 ERROR [customer-service,,] c.a.c.service.AuthService - Invalid credentials for aasif
+2026-06-08 18:25:41 WARN  [customer-service,,] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.RuntimeException: Invalid credentials]
+2026-06-08 18:30:17 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - Missing Authorization header for URI=/auth/login
+2026-06-08 18:30:17 INFO  [customer-service,,] c.a.c.service.AuthService - Login request received for aasif
+2026-06-08 18:30:17 ERROR [customer-service,,] c.a.c.service.AuthService - Invalid credentials for aasif
+2026-06-08 18:30:17 WARN  [customer-service,,] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.RuntimeException: Invalid credentials]
+2026-06-08 18:30:18 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - Missing Authorization header for URI=/auth/login
+2026-06-08 18:30:18 WARN  [customer-service,,] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.RuntimeException: User not found]
+2026-06-08 18:31:23 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - Missing Authorization header for URI=/auth/login
+2026-06-08 18:31:23 INFO  [customer-service,,] c.a.c.service.AuthService - Login request received for aasif
+2026-06-08 18:31:23 ERROR [customer-service,,] c.a.c.service.AuthService - Invalid credentials for aasif
+2026-06-08 18:31:24 WARN  [customer-service,,] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.RuntimeException: Invalid credentials]
+2026-06-08 18:31:28 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - Missing Authorization header for URI=/auth/login
+2026-06-08 18:31:28 INFO  [customer-service,,] c.a.c.service.AuthService - Login request received for aasif
+2026-06-08 18:31:28 INFO  [customer-service,,] c.a.c.service.AuthService - Login successful for aasif
+2026-06-08 18:31:29 DEBUG [customer-service,,] c.a.c.s.JwtAuthenticationFilter - JWT token received for URI=/api/customers
+2026-06-08 18:31:29 INFO  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - JWT validated successfully for user=aasif
+2026-06-08 18:31:29 INFO  [customer-service,,] c.a.c.service.CustomerService - Fetching all customers
+2026-06-08 18:33:33 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - Missing Authorization header for URI=/auth/login
+2026-06-08 18:33:33 INFO  [customer-service,,] c.a.c.service.AuthService - Login request received for aasif
+2026-06-08 18:33:33 INFO  [customer-service,,] c.a.c.service.AuthService - Login successful for aasif
+2026-06-08 18:33:34 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - Missing Authorization header for URI=/auth/login
+2026-06-08 18:33:34 INFO  [customer-service,,] c.a.c.service.AuthService - Login request received for aasif
+2026-06-08 18:33:34 INFO  [customer-service,,] c.a.c.service.AuthService - Login successful for aasif
+2026-06-08 18:33:35 DEBUG [customer-service,,] c.a.c.s.JwtAuthenticationFilter - JWT token received for URI=/api/customers
+2026-06-08 18:33:35 INFO  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - JWT validated successfully for user=aasif
+2026-06-08 18:33:35 INFO  [customer-service,,] c.a.c.service.CustomerService - Fetching all customers
+2026-06-08 18:34:22 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - Missing Authorization header for URI=/auth/login
+2026-06-08 18:34:22 INFO  [customer-service,,] c.a.c.service.AuthService - Login request received for aasif
+2026-06-08 18:34:22 INFO  [customer-service,,] c.a.c.service.AuthService - Login successful for aasif
+2026-06-08 18:34:23 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - Missing Authorization header for URI=/auth/login
+2026-06-08 18:34:23 INFO  [customer-service,,] c.a.c.service.AuthService - Login request received for aasif
+2026-06-08 18:34:23 INFO  [customer-service,,] c.a.c.service.AuthService - Login successful for aasif
+2026-06-08 18:34:23 DEBUG [customer-service,,] c.a.c.s.JwtAuthenticationFilter - JWT token received for URI=/api/customers
+2026-06-08 18:34:23 INFO  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - JWT validated successfully for user=aasif
+2026-06-08 18:34:23 INFO  [customer-service,,] c.a.c.service.CustomerService - Fetching all customers
+2026-06-08 18:34:23 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - Missing Authorization header for URI=/api/customers
+2026-06-08 18:34:23 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationEntryPoint - Unauthorized access attempt. URI=/api/customers IP=127.0.0.1
+2026-06-08 18:34:41 INFO  [customer-service,,] c.a.c.CustomerserviceApplicationTests - Starting CustomerserviceApplicationTests using Java 21.0.7 with PID 18576 (started by aasif in D:\AlishaLearning\BankingSystem\customer-service\customerservice)
+2026-06-08 18:34:41 DEBUG [customer-service,,] c.a.c.CustomerserviceApplicationTests - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-06-08 18:34:41 INFO  [customer-service,,] c.a.c.CustomerserviceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-06-08 18:34:43 INFO  [customer-service,,] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-08 18:34:43 INFO  [customer-service,,] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 137 ms. Found 1 JPA repository interface.
+2026-06-08 18:34:45 INFO  [customer-service,,] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-08 18:34:45 INFO  [customer-service,,] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-06-08 18:34:45 INFO  [customer-service,,] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-06-08 18:34:47 INFO  [customer-service,,] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-08 18:34:47 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-08 18:34:48 INFO  [customer-service,,] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@245c8ea5
+2026-06-08 18:34:48 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-08 18:34:48 WARN  [customer-service,,] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-08 18:34:48 INFO  [customer-service,,] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-08 18:34:55 INFO  [customer-service,,] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-08 18:34:55 INFO  [customer-service,,] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08 18:34:57 INFO  [customer-service,,] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customerUserDetailsService
+2026-06-08 18:34:57 WARN  [customer-service,,] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-08 18:34:59 INFO  [customer-service,,] o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-06-08 18:35:01 INFO  [customer-service,,] c.a.c.CustomerserviceApplicationTests - Started CustomerserviceApplicationTests in 21.579 seconds (process running for 24.687)
+2026-06-08 18:35:06 INFO  [customer-service,,] c.a.c.service.AuthService - Login request received for aasif
+2026-06-08 18:35:06 INFO  [customer-service,,] c.a.c.service.AuthService - Login successful for aasif
+2026-06-08 18:35:06 INFO  [customer-service,,] c.a.c.service.CustomerService - Fetching customer with id 1
+2026-06-08 18:35:06 INFO  [customer-service,,] c.a.c.service.CustomerService - Fetching customer with id 1
+2026-06-08 18:35:06 INFO  [customer-service,,] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08 18:35:07 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-08 18:35:07 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-08 18:40:01 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - Missing Authorization header for URI=/auth/login
+2026-06-08 18:40:01 INFO  [customer-service,,] c.a.c.service.AuthService - Login request received for aasif
+2026-06-08 18:40:02 INFO  [customer-service,,] c.a.c.service.AuthService - Login successful for aasif
+2026-06-08 18:40:03 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - Missing Authorization header for URI=/auth/login
+2026-06-08 18:40:03 INFO  [customer-service,,] c.a.c.service.AuthService - Login request received for aasif
+2026-06-08 18:40:03 INFO  [customer-service,,] c.a.c.service.AuthService - Login successful for aasif
+2026-06-08 18:40:03 DEBUG [customer-service,,] c.a.c.s.JwtAuthenticationFilter - JWT token received for URI=/api/customers
+2026-06-08 18:40:03 INFO  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - JWT validated successfully for user=aasif
+2026-06-08 18:40:03 INFO  [customer-service,,] c.a.c.service.CustomerService - Fetching all customers
+2026-06-08 18:40:03 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - Missing Authorization header for URI=/api/customers
+2026-06-08 18:40:03 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationEntryPoint - Unauthorized access attempt. URI=/api/customers IP=127.0.0.1
+2026-06-08 18:40:22 INFO  [customer-service,,] c.a.c.CustomerserviceApplicationTests - Starting CustomerserviceApplicationTests using Java 21.0.7 with PID 12860 (started by aasif in D:\AlishaLearning\BankingSystem\customer-service\customerservice)
+2026-06-08 18:40:22 DEBUG [customer-service,,] c.a.c.CustomerserviceApplicationTests - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-06-08 18:40:22 INFO  [customer-service,,] c.a.c.CustomerserviceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-06-08 18:40:24 INFO  [customer-service,,] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-08 18:40:24 INFO  [customer-service,,] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 140 ms. Found 1 JPA repository interface.
+2026-06-08 18:40:26 INFO  [customer-service,,] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-08 18:40:26 INFO  [customer-service,,] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-06-08 18:40:26 INFO  [customer-service,,] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-06-08 18:40:27 INFO  [customer-service,,] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-08 18:40:27 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-08 18:40:27 INFO  [customer-service,,] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1b36c5aa
+2026-06-08 18:40:27 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-08 18:40:27 WARN  [customer-service,,] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-08 18:40:27 INFO  [customer-service,,] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-08 18:40:29 INFO  [customer-service,,] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-08 18:40:30 INFO  [customer-service,,] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08 18:40:30 INFO  [customer-service,,] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customerUserDetailsService
+2026-06-08 18:40:30 WARN  [customer-service,,] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-08 18:40:31 INFO  [customer-service,,] o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-06-08 18:40:32 INFO  [customer-service,,] c.a.c.CustomerserviceApplicationTests - Started CustomerserviceApplicationTests in 11.242 seconds (process running for 14.432)
+2026-06-08 18:40:37 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - Missing Authorization header for URI=/auth/login
+2026-06-08 18:40:37 INFO  [customer-service,,] c.a.c.service.AuthService - Login request received for aasif
+2026-06-08 18:40:37 INFO  [customer-service,,] c.a.c.service.AuthService - Login successful for aasif
+2026-06-08 18:40:38 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - Missing Authorization header for URI=/auth/login
+2026-06-08 18:40:38 INFO  [customer-service,,] c.a.c.service.AuthService - Login request received for aasif
+2026-06-08 18:40:38 INFO  [customer-service,,] c.a.c.service.AuthService - Login successful for aasif
+2026-06-08 18:40:38 DEBUG [customer-service,,] c.a.c.s.JwtAuthenticationFilter - JWT token received for URI=/api/customers
+2026-06-08 18:40:38 INFO  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - JWT validated successfully for user=aasif
+2026-06-08 18:40:38 INFO  [customer-service,,] c.a.c.service.CustomerService - Fetching all customers
+2026-06-08 18:40:38 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - Missing Authorization header for URI=/api/customers
+2026-06-08 18:40:38 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationEntryPoint - Unauthorized access attempt. URI=/api/customers IP=127.0.0.1
+2026-06-08 18:40:40 INFO  [customer-service,,] c.a.c.service.AuthService - Login request received for aasif
+2026-06-08 18:40:40 INFO  [customer-service,,] c.a.c.service.AuthService - Login successful for aasif
+2026-06-08 18:40:40 INFO  [customer-service,,] c.a.c.service.CustomerService - Fetching customer with id 1
+2026-06-08 18:40:40 INFO  [customer-service,,] c.a.c.service.CustomerService - Fetching customer with id 1
+2026-06-08 18:40:41 INFO  [customer-service,,] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08 18:40:41 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-08 18:40:41 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-08 18:42:02 INFO  [customer-service,,] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-08 18:42:02 INFO  [customer-service,,] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-08 18:42:02 INFO  [customer-service,,] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-08 18:42:02 INFO  [customer-service,,] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08 18:42:02 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-08 18:42:02 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-08 18:42:03 INFO  [customer-service,,] c.a.c.CustomerserviceApplication - Starting CustomerserviceApplication using Java 21.0.7 with PID 16224 (D:\AlishaLearning\BankingSystem\customer-service\customerservice\target\classes started by aasif in D:\AlishaLearning\BankingSystem\customer-service\customerservice)
+2026-06-08 18:42:03 DEBUG [customer-service,,] c.a.c.CustomerserviceApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-06-08 18:42:03 INFO  [customer-service,,] c.a.c.CustomerserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-08 18:42:04 INFO  [customer-service,,] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-08 18:42:04 INFO  [customer-service,,] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interface.
+2026-06-08 18:42:04 INFO  [customer-service,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-06-08 18:42:04 INFO  [customer-service,,] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-08 18:42:04 INFO  [customer-service,,] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-06-08 18:42:04 INFO  [customer-service,,] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-08 18:42:04 INFO  [customer-service,,] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1256 ms
+2026-06-08 18:42:04 INFO  [customer-service,,] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-08 18:42:04 INFO  [customer-service,,] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-06-08 18:42:04 INFO  [customer-service,,] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-08 18:42:04 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-06-08 18:42:04 INFO  [customer-service,,] com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@1b93925e
+2026-06-08 18:42:04 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-06-08 18:42:04 WARN  [customer-service,,] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-08 18:42:04 INFO  [customer-service,,] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 17.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-08 18:42:04 INFO  [customer-service,,] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-08 18:42:04 INFO  [customer-service,,] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08 18:42:04 DEBUG [customer-service,,] c.a.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-06-08 18:42:04 INFO  [customer-service,,] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customerUserDetailsService
+2026-06-08 18:42:05 WARN  [customer-service,,] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-08 18:42:05 INFO  [customer-service,,] o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-06-08 18:42:05 INFO  [customer-service,,] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-08 18:42:05 INFO  [customer-service,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-06-08 18:42:05 INFO  [customer-service,,] c.a.c.CustomerserviceApplication - Started CustomerserviceApplication in 2.513 seconds (process running for 1037.374)
+2026-06-08 18:42:05 INFO  [customer-service,,] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-06-08 18:42:17 INFO  [customer-service,,] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-08 18:42:17 INFO  [customer-service,,] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-08 18:42:17 INFO  [customer-service,,] o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2026-06-08 18:42:17 DEBUG [customer-service,,] c.a.c.s.JwtAuthenticationFilter - JWT token received for URI=/actuator/health
+2026-06-08 18:42:17 ERROR [customer-service,,] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.RuntimeException: io.jsonwebtoken.ExpiredJwtException: JWT expired 116820824 milliseconds ago at 2026-06-07T04:45:17.000Z. Current time: 2026-06-08T13:12:17.824Z. Allowed clock skew: 0 milliseconds.
+	at com.alisha.customerservice.security.JwtService.extractUsername(JwtService.java:58) ~[classes/:na]
+	at com.alisha.customerservice.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:53) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:334) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:225) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319) ~[spring-security-config-6.5.10.jar:6.5.10]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267) ~[spring-webmvc-6.2.18.jar:6.2.18]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240) ~[spring-security-config-6.5.10.jar:6.5.10]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1797) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: io.jsonwebtoken.ExpiredJwtException: JWT expired 116820824 milliseconds ago at 2026-06-07T04:45:17.000Z. Current time: 2026-06-08T13:12:17.824Z. Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:688) ~[jjwt-impl-0.12.7.jar:0.12.7]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:364) ~[jjwt-impl-0.12.7.jar:0.12.7]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:94) ~[jjwt-impl-0.12.7.jar:0.12.7]
+	at io.jsonwebtoken.impl.io.AbstractParser.parse(AbstractParser.java:36) ~[jjwt-impl-0.12.7.jar:0.12.7]
+	at io.jsonwebtoken.impl.io.AbstractParser.parse(AbstractParser.java:29) ~[jjwt-impl-0.12.7.jar:0.12.7]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseSignedClaims(DefaultJwtParser.java:827) ~[jjwt-impl-0.12.7.jar:0.12.7]
+	at com.alisha.customerservice.security.JwtService.extractUsername(JwtService.java:53) ~[classes/:na]
+	... 80 common frames omitted
+2026-06-08 18:42:18 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationEntryPoint - Unauthorized access attempt. URI=/error IP=0:0:0:0:0:0:0:1
+2026-06-08 18:42:28 DEBUG [customer-service,,] c.a.c.s.JwtAuthenticationFilter - JWT token received for URI=/actuator/health
+2026-06-08 18:42:28 ERROR [customer-service,,] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.RuntimeException: io.jsonwebtoken.ExpiredJwtException: JWT expired 116831519 milliseconds ago at 2026-06-07T04:45:17.000Z. Current time: 2026-06-08T13:12:28.519Z. Allowed clock skew: 0 milliseconds.
+	at com.alisha.customerservice.security.JwtService.extractUsername(JwtService.java:58) ~[classes/:na]
+	at com.alisha.customerservice.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:53) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:334) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:225) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.5.10.jar:6.5.10]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319) ~[spring-security-config-6.5.10.jar:6.5.10]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267) ~[spring-webmvc-6.2.18.jar:6.2.18]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240) ~[spring-security-config-6.5.10.jar:6.5.10]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.18.jar:6.2.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1797) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.54.jar:10.1.54]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: io.jsonwebtoken.ExpiredJwtException: JWT expired 116831519 milliseconds ago at 2026-06-07T04:45:17.000Z. Current time: 2026-06-08T13:12:28.519Z. Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:688) ~[jjwt-impl-0.12.7.jar:0.12.7]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:364) ~[jjwt-impl-0.12.7.jar:0.12.7]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:94) ~[jjwt-impl-0.12.7.jar:0.12.7]
+	at io.jsonwebtoken.impl.io.AbstractParser.parse(AbstractParser.java:36) ~[jjwt-impl-0.12.7.jar:0.12.7]
+	at io.jsonwebtoken.impl.io.AbstractParser.parse(AbstractParser.java:29) ~[jjwt-impl-0.12.7.jar:0.12.7]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseSignedClaims(DefaultJwtParser.java:827) ~[jjwt-impl-0.12.7.jar:0.12.7]
+	at com.alisha.customerservice.security.JwtService.extractUsername(JwtService.java:53) ~[classes/:na]
+	... 80 common frames omitted
+2026-06-08 18:42:28 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationEntryPoint - Unauthorized access attempt. URI=/error IP=0:0:0:0:0:0:0:1
+2026-06-08 18:43:01 WARN  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - Missing Authorization header for URI=/auth/login
+2026-06-08 18:43:01 INFO  [customer-service,,] c.a.c.service.AuthService - Login request received for aasif
+2026-06-08 18:43:02 INFO  [customer-service,,] c.a.c.service.AuthService - Login successful for aasif
+2026-06-08 18:43:21 DEBUG [customer-service,,] c.a.c.s.JwtAuthenticationFilter - JWT token received for URI=/actuator/health
+2026-06-08 18:43:21 INFO  [customer-service,,] c.a.c.s.JwtAuthenticationFilter - JWT validated successfully for user=aasif
+2026-06-08 19:18:07 INFO  [customer-service,,] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-08 19:18:07 INFO  [customer-service,,] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-08 19:18:07 INFO  [customer-service,,] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08 19:18:07 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-06-08 19:18:07 INFO  [customer-service,,] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
