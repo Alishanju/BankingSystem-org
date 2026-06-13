@@ -8,6 +8,9 @@ import com.alisha.customerservice.repository.CustomerRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,6 +21,7 @@ import java.util.List;
 public class CustomerService {
 
     private final CustomerRepository repository;
+    
 
     private CustomerResponse map(Customer customer) {
 
@@ -39,7 +43,9 @@ public class CustomerService {
                 .toList();
     }
 
+    @Cacheable(value = "customers", key = "#id")
     public CustomerResponse getCustomerById(Long id) {
+        System.out.println("get from DB");
         log.info("Fetching customer with id {}", id);
         Customer customer = repository.findById(id)
                 .orElseThrow(() -> new CustomerNotFoundException(
@@ -48,6 +54,7 @@ public class CustomerService {
         return map(customer);
     }
 
+    @CachePut(value = "customers", key = "#id")
     public CustomerResponse updateCustomer(
             Long id,
             CustomerRequest request) {
@@ -66,6 +73,7 @@ public class CustomerService {
         return map(savedCustomer);
     }
 
+    @CacheEvict(value = "customers", key = "#id")
     public void deleteCustomer(Long id) {
         log.info("Deleting customer with id {}", id);
 

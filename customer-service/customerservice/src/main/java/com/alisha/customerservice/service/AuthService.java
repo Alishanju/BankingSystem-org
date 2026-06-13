@@ -9,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import com.alisha.customerservice.event.CustomerCreatedEvent;
 
 @Service
 @RequiredArgsConstructor
@@ -18,6 +19,7 @@ public class AuthService {
         private final CustomerRepository repository;
         private final PasswordEncoder passwordEncoder;
         private final JwtService jwtService;
+        private final RabbitMQPublisher rabbitMQPublisher;
 
         public String register(RegisterRequest request) {
 
@@ -30,7 +32,21 @@ public class AuthService {
                                 .role("USER")
                                 .build();
                 log.info("Registering user {}", request.getUsername());
-                repository.save(customer);
+                
+                Customer savedCustomer=repository.save(customer);
+                
+                rabbitMQPublisher.publishCustomerCreated(
+
+            CustomerCreatedEvent.builder()
+                    .customerId(
+                            savedCustomer.getId())
+                    .username(
+                            savedCustomer.getUsername())
+                    .email(
+                            savedCustomer.getEmail())
+                    .build()
+    );
+
                 log.info("User registered successfully {}",
                                 request.getUsername());
 
