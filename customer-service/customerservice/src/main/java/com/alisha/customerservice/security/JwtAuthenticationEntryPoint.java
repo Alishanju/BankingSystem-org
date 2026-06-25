@@ -16,45 +16,45 @@ import java.time.LocalDateTime;
 @Slf4j
 @RequiredArgsConstructor
 public class JwtAuthenticationEntryPoint
-        implements AuthenticationEntryPoint {
+                implements AuthenticationEntryPoint {
 
-    private final ObjectMapper objectMapper;
+        private final ObjectMapper objectMapper;
 
-    @Override
-    public void commence(
-            HttpServletRequest request,
-            HttpServletResponse response,
-            AuthenticationException authException) {
+        @Override
+        public void commence(
+                        HttpServletRequest request,
+                        HttpServletResponse response,
+                        AuthenticationException authException) {
 
-        try {
+                try {
 
-            log.warn(
-                    "Unauthorized access attempt. URI={} IP={}",
-                    request.getRequestURI(),
-                    request.getRemoteAddr());
+                        log.warn(
+                                        "Unauthorized access attempt. URI={} IP={}",
+                                        request.getRequestURI(),
+                                        request.getRemoteAddr());
 
-            AuthenticationErrorResponse error = new AuthenticationErrorResponse(
-                    LocalDateTime.now(),
-                    HttpServletResponse.SC_UNAUTHORIZED,
-                    "Unauthorized",
-                    "Valid JWT token is required",
-                    request.getRequestURI());
+                        AuthenticationErrorResponse error = new AuthenticationErrorResponse(
+                                        LocalDateTime.now(),
+                                        HttpServletResponse.SC_UNAUTHORIZED,
+                                        "Unauthorized",
+                                        "Valid JWT token is required",
+                                        request.getRequestURI());
 
-            response.setStatus(
-                    HttpServletResponse.SC_UNAUTHORIZED);
+                        response.setStatus(
+                                        HttpServletResponse.SC_UNAUTHORIZED);
 
-            response.setContentType(
-                    "application/json");
+                        response.setContentType(
+                                        "application/json");
 
-            objectMapper.writeValue(
-                    response.getOutputStream(),
-                    error);
+                        objectMapper.writeValue(
+                                        response.getOutputStream(),
+                                        error);
 
-        } catch (Exception ex) {
+                } catch (Exception ex) {
 
-            log.error(
-                    "Failed to write authentication error response",
-                    ex);
+                        log.error(
+                                        "Failed to write authentication error response",
+                                        ex);
+                }
         }
-    }
 }

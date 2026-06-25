@@ -21,44 +21,50 @@ public class KeyLoader {
         @Value("${jwt.public-key}")
         private Resource publicKeyResource;
 
-        public PrivateKey getPrivateKey() throws Exception {
+        public PrivateKey getPrivateKey() {
+                try {
+                        String key = new String(
+                                        privateKeyResource.getInputStream()
+                                                        .readAllBytes());
 
-                String key = new String(
-                                privateKeyResource.getInputStream()
-                                                .readAllBytes());
+                        key = key
+                                        .replace("-----BEGIN PRIVATE KEY-----", "")
+                                        .replace("-----END PRIVATE KEY-----", "")
+                                        .replaceAll("\\s", "");
 
-                key = key
-                                .replace("-----BEGIN PRIVATE KEY-----", "")
-                                .replace("-----END PRIVATE KEY-----", "")
-                                .replaceAll("\\s", "");
+                        byte[] decoded = Base64.getDecoder().decode(key);
 
-                byte[] decoded = Base64.getDecoder().decode(key);
+                        PKCS8EncodedKeySpec spec = new PKCS8EncodedKeySpec(decoded);
 
-                PKCS8EncodedKeySpec spec = new PKCS8EncodedKeySpec(decoded);
-
-                return KeyFactory
-                                .getInstance("RSA")
-                                .generatePrivate(spec);
+                        return KeyFactory
+                                        .getInstance("RSA")
+                                        .generatePrivate(spec);
+                } catch (Exception e) {
+                        throw new RuntimeException("Unable to load private key", e);
+                }
         }
 
-        public PublicKey getPublicKey() throws Exception {
+        public PublicKey getPublicKey() {
+                try {
+                        String key = new String(
+                                        publicKeyResource
+                                                        .getInputStream()
+                                                        .readAllBytes());
 
-                String key = new String(
-                                publicKeyResource
-                                                .getInputStream()
-                                                .readAllBytes());
+                        key = key
+                                        .replace("-----BEGIN PUBLIC KEY-----", "")
+                                        .replace("-----END PUBLIC KEY-----", "")
+                                        .replaceAll("\\s", "");
 
-                key = key
-                                .replace("-----BEGIN PUBLIC KEY-----", "")
-                                .replace("-----END PUBLIC KEY-----", "")
-                                .replaceAll("\\s", "");
+                        byte[] decoded = Base64.getDecoder().decode(key);
 
-                byte[] decoded = Base64.getDecoder().decode(key);
+                        X509EncodedKeySpec spec = new X509EncodedKeySpec(decoded);
 
-                X509EncodedKeySpec spec = new X509EncodedKeySpec(decoded);
-
-                return KeyFactory
-                                .getInstance("RSA")
-                                .generatePublic(spec);
+                        return KeyFactory
+                                        .getInstance("RSA")
+                                        .generatePublic(spec);
+                } catch (Exception e) {
+                        throw new RuntimeException("Unable to load public key", e);
+                }
         }
 }
