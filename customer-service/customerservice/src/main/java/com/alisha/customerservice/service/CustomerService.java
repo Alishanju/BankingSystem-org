@@ -21,7 +21,6 @@ import java.util.List;
 public class CustomerService {
 
     private final CustomerRepository repository;
-    
 
     private CustomerResponse map(Customer customer) {
 
@@ -47,6 +46,7 @@ public class CustomerService {
     public CustomerResponse getCustomerById(Long id) {
         System.out.println("get from DB");
         log.info("Fetching customer with id {}", id);
+
         Customer customer = repository.findById(id)
                 .orElseThrow(() -> new CustomerNotFoundException(
                         "Customer not found"));

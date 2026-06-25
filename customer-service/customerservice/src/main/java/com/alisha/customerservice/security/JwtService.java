@@ -1,6 +1,10 @@
 package com.alisha.customerservice.security;
 
+import io.jsonwebtoken.JwtParser;
 import io.jsonwebtoken.Jwts;
+
+import jakarta.annotation.PostConstruct;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
@@ -19,64 +23,32 @@ public class JwtService {
     @Value("${jwt.expiration}")
     private long expiration;
 
+    private JwtParser parser;
+
+    @PostConstruct
+    public void init() {
+
+        parser = Jwts.parser()
+                .verifyWith(keyLoader.getPublicKey())
+                .build();
+    }
+
     public String generateToken(
             String username,
             String role) {
 
-        try {
-
-            return Jwts.builder()
-                    .subject(username)
-                    .claim("role", role)
-                    .issuedAt(new Date())
-                    .expiration(
-                            new Date(
-                                    System.currentTimeMillis()
-                                            + expiration))
-                    .signWith(
-                            keyLoader.getPrivateKey(),
-                            Jwts.SIG.RS256)
-                    .compact();
-
-        } catch (Exception ex) {
-            throw new RuntimeException(ex);
-        }
+        return Jwts.builder()
+                .subject(username)
+                .claim("role", role)
+                .issuedAt(new Date())
+                .expiration(
+                        new Date(
+                                System.currentTimeMillis()
+                                        + expiration))
+                .signWith(
+                        keyLoader.getPrivateKey(),
+                        Jwts.SIG.RS256)
+                .compact();
     }
 
-    public String extractUsername(String token) {
-
-        try {
-
-            return Jwts.parser()
-                    .verifyWith(keyLoader.getPublicKey())
-                    .build()
-                    .parseSignedClaims(token)
-                    .getPayload()
-                    .getSubject();
-
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    public boolean isTokenValid(String token) {
-
-        try {
-
-            Jwts.parser()
-                    .verifyWith(keyLoader.getPublicKey())
-                    .build()
-                    .parseSignedClaims(token);
-
-            return true;
-
-        } catch (Exception ex) {
-
-            log.error(
-                    "JWT validation failed: {}",
-                    ex.getMessage());
-
-            return false;
-        }
-    }
 }
