@@ -7,8 +7,8 @@ Given url 'http://localhost:8081/auth/login'
 And request
 """
 {
-  "username":"aasif",
-  "password":"Aasif@786"
+  "username":"Nemalu",
+  "password":"Nemalu@786"
 }
 """
 
@@ -25,6 +25,8 @@ And header Authorization = 'Bearer ' + token
 When method get
 
 Then status 200
+
+And match response != null
 
 Scenario: Unauthorized Access
 

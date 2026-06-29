@@ -1,6 +1,7 @@
 package com.alisha.customerservice.service;
 
 import com.alisha.customerservice.dto.LoginRequest;
+import com.alisha.customerservice.dto.LoginResponse;
 import com.alisha.customerservice.entity.Customer;
 import com.alisha.customerservice.repository.CustomerRepository;
 import com.alisha.customerservice.security.JwtService;
@@ -13,55 +14,74 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 class AuthServiceTest {
 
-    @Mock
-    private CustomerRepository repository;
+        @Mock
+        private CustomerRepository repository;
 
-    @Mock
-    private PasswordEncoder passwordEncoder;
+        @Mock
+        private PasswordEncoder passwordEncoder;
 
-    @Mock
-    private JwtService jwtService;
+        @Mock
+        private JwtService jwtService;
 
-    @InjectMocks
-    private AuthService authService;
+        @Mock
+        private RabbitMQPublisher rabbitMQPublisher;
 
-    @Test
-    void shouldLoginSuccessfully() {
+        @InjectMocks
+        private AuthService authService;
 
-        LoginRequest request = new LoginRequest();
+        @Test
+        void shouldLoginSuccessfully() {
 
-        request.setUsername("aasif");
-        request.setPassword("password");
+                LoginRequest request = new LoginRequest();
 
-        Customer customer = Customer.builder()
-                .username("aasif")
-                .password("encoded")
-                .role("USER")
-                .build();
+                request.setUsername("aasif");
+                request.setPassword("password");
 
-        when(repository.findByUsername("aasif"))
-                .thenReturn(Optional.of(customer));
+                Customer customer = Customer.builder()
+                                .id(2L)
+                                .username("aasif")
+                                .email("aasif@gmail.com")
+                                .password("encoded")
+                                .role("USER")
+                                .build();
 
-        when(passwordEncoder.matches(
-                "password",
-                "encoded"))
-                .thenReturn(true);
+                when(repository.findByUsername("aasif"))
+                                .thenReturn(Optional.of(customer));
 
-        when(jwtService.generateToken(
-                "aasif",
-                "USER"))
-                .thenReturn("jwt-token");
+                when(passwordEncoder.matches(
+                                "password",
+                                "encoded"))
+                                .thenReturn(true);
 
-        String token = authService.login(request);
+                when(jwtService.generateToken(
+                                "aasif",
+                                "USER"))
+                                .thenReturn("jwt-token");
 
-        assertEquals(
-                "jwt-token",
-                token);
-    }
+                LoginResponse response = authService.login(request);
+
+                assertNotNull(response);
+
+                assertEquals(
+                                "jwt-token",
+                                response.getToken());
+
+                assertEquals(
+                                "aasif",
+                                response.getUser().getUsername());
+
+                assertEquals(
+                                2L,
+                                response.getUser().getId());
+
+                assertEquals(
+                                "USER",
+                                response.getUser().getRole());
+        }
 }

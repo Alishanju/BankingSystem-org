@@ -1,6 +1,8 @@
 package com.alisha.customerservice.service;
 
 import com.alisha.customerservice.dto.LoginRequest;
+import com.alisha.customerservice.dto.LoginResponse;
+import com.alisha.customerservice.dto.LoginUserResponse;
 import com.alisha.customerservice.dto.RegisterRequest;
 import com.alisha.customerservice.entity.Customer;
 import com.alisha.customerservice.repository.CustomerRepository;
@@ -32,20 +34,19 @@ public class AuthService {
                                 .role("USER")
                                 .build();
                 log.info("Registering user {}", request.getUsername());
-                
-                Customer savedCustomer=repository.save(customer);
-                
+
+                Customer savedCustomer = repository.save(customer);
+
                 rabbitMQPublisher.publishCustomerCreated(
 
-            CustomerCreatedEvent.builder()
-                    .customerId(
-                            savedCustomer.getId())
-                    .username(
-                            savedCustomer.getUsername())
-                    .email(
-                            savedCustomer.getEmail())
-                    .build()
-    );
+                                CustomerCreatedEvent.builder()
+                                                .customerId(
+                                                                savedCustomer.getId())
+                                                .username(
+                                                                savedCustomer.getUsername())
+                                                .email(
+                                                                savedCustomer.getEmail())
+                                                .build());
 
                 log.info("User registered successfully {}",
                                 request.getUsername());
@@ -53,7 +54,7 @@ public class AuthService {
                 return "User Registered Successfully";
         }
 
-        public String login(LoginRequest request) {
+    public LoginResponse login(LoginRequest request) {
 
                 Customer customer = repository.findByUsername(
                                 request.getUsername())
@@ -73,8 +74,24 @@ public class AuthService {
                 log.info("Login successful for {}",
                                 request.getUsername());
 
-                return jwtService.generateToken(
-                                customer.getUsername(),
-                                customer.getRole());
-        }
+                String token = jwtService.generateToken(
+        customer.getUsername(),
+        customer.getRole());
+
+LoginUserResponse user = new LoginUserResponse(
+
+        customer.getId(),
+
+        customer.getUsername(),
+
+        customer.getEmail(),
+
+        customer.getRole());
+
+return new LoginResponse(
+
+        token,
+
+        user);
+}
 }
