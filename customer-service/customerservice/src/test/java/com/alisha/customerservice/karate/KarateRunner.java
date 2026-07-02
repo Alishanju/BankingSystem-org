@@ -1,3 +1,5 @@
+
+//mvn test -Dtest=KarateRunner
 package com.alisha.customerservice.karate;
 
 import com.intuit.karate.junit5.Karate;

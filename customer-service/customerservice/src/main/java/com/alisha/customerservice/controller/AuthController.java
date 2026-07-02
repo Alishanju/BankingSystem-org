@@ -22,11 +22,10 @@ public class AuthController {
     }
 
     @PostMapping("/login")
-    public LoginResponse login(@RequestBody LoginRequest request) {
+    public LoginResponse login(
+            @RequestBody LoginRequest request) {
 
-        String token = authService.login(request);
-
-        return new LoginResponse(token);
+        return authService.login(request);
     }
 
 }
