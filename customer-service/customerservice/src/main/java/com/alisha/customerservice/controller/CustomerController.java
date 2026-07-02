@@ -2,6 +2,7 @@ package com.alisha.customerservice.controller;
 
 import com.alisha.customerservice.dto.CustomerRequest;
 import com.alisha.customerservice.dto.CustomerResponse;
+import com.alisha.customerservice.dto.RegisterRequest;
 import com.alisha.customerservice.service.CustomerService;
 
 import jakarta.servlet.http.HttpServletRequest;
@@ -21,6 +22,12 @@ import java.util.List;
 public class CustomerController {
 
         private final CustomerService customerService;
+
+        @PostMapping
+        public CustomerResponse createCustomer(@RequestBody RegisterRequest request) {
+
+                return customerService.create(request);
+        }
 
         @GetMapping
         public List<CustomerResponse> getAllCustomers() {
@@ -58,7 +65,7 @@ public class CustomerController {
         }
 
         @DeleteMapping("/{id}")
-        @PreAuthorize("hasRole('ADMIN')")
+        // @PreAuthorize("hasRole('ADMIN')")
         public String deleteCustomer(
                         @PathVariable Long id) {
 
