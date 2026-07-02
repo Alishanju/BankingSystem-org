@@ -2,6 +2,7 @@ package com.alisha.customerservice.service;
 
 import com.alisha.customerservice.dto.CustomerRequest;
 import com.alisha.customerservice.dto.CustomerResponse;
+import com.alisha.customerservice.dto.RegisterRequest;
 import com.alisha.customerservice.entity.Customer;
 import com.alisha.customerservice.exception.CustomerNotFoundException;
 import com.alisha.customerservice.repository.CustomerRepository;
@@ -11,6 +12,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,7 +24,7 @@ import java.util.List;
 public class CustomerService {
 
     private final CustomerRepository repository;
-    
+    private final PasswordEncoder passwordEncoder;
 
     private CustomerResponse map(Customer customer) {
 
@@ -33,6 +36,26 @@ public class CustomerService {
                 .username(customer.getUsername())
                 .role(customer.getRole())
                 .build();
+    }
+
+    public CustomerResponse create(RegisterRequest request) {
+
+        log.info("Creating customer with username {}", request.getUsername());
+
+        Customer customer = Customer.builder()
+                .name(request.getName())
+                .email(request.getEmail())
+                .phone(request.getPhone())
+                .username(request.getUsername())
+                .password(passwordEncoder.encode(request.getPassword()))
+                .role("USER")
+                .build();
+
+        Customer savedCustomer = repository.save(customer);
+
+        log.info("Customer created successfully with id {}", savedCustomer.getId());
+
+        return map(savedCustomer);
     }
 
     public List<CustomerResponse> getAllCustomers() {
@@ -47,6 +70,7 @@ public class CustomerService {
     public CustomerResponse getCustomerById(Long id) {
         System.out.println("get from DB");
         log.info("Fetching customer with id {}", id);
+
         Customer customer = repository.findById(id)
                 .orElseThrow(() -> new CustomerNotFoundException(
                         "Customer not found"));
